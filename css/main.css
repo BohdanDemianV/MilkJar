@@ -541,7 +541,7 @@ h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 	max-width: 308px;
 	height: 100%;
-	max-height: auto;
+
 }
 .title_wrapper_slider {
 	margin: 12.5% 0 2%;
@@ -819,7 +819,7 @@ h1, h2, h3, h4, h5, h6 {
 	.section1 {
 		width: 100%;
     	height: 100%;
-    	order: ;
+
 	}
 	.section2 {
 		width: 100%;
