@@ -141,6 +141,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*----------------hero------------*/
 .hero{
+    margin-top: 137px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -157,6 +158,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero_content{
     width: 50%;
+    height: auto;
     background-color: #F9F4EE;
     display: flex;
     justify-content: center;
@@ -208,7 +210,48 @@ h1, h2, h3, h4, h5, h6 {
     color: #939393;
 }
 
-
+/*----------------grid------------*/
+.grid{
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7.5% 0 8%;
+}
+.grid_wrapper{
+    width: calc(100% / 3 - 30px);
+    margin: 0 15px 35px;
+    height: 100%;
+}
+.grid_content_wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.grid_img img{
+    display: block;
+    width: 100%;
+}
+.grid_content_title{
+    font-size: 22px;
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+.btn_grid{
+    background: none;
+    color: #f46c77;
+    clip-path: none;
+    padding: 0 40px 0 0;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.btn_grid:hover{
+    color: #6c0912;
+    background: none;
+    background-repeat: no-repeat;
+    background-position: right;
+}
 
 
 /*-----footer section-----*/
@@ -321,7 +364,7 @@ h1, h2, h3, h4, h5, h6 {
         top: -1000%;
         left: 0;
         padding: 160px 20px 100px;
-        background-color: #626262;
+        background-color: #F9F4EE;
         opacity: 0.9;
         overflow: auto;
 
@@ -329,6 +372,7 @@ h1, h2, h3, h4, h5, h6 {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        z-index: 110;
     }
 
 
@@ -442,7 +486,22 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-
+@media screen and (max-width: 991px) {
+    .hero{
+        flex-wrap: wrap;
+    }
+    .hero_content{
+        width: 100%;
+        height: 100%;
+        order: 2;
+    }
+    .hero_img{
+        width: 100%;
+    }
+    .grid_wrapper{
+        width: calc(100% / 2 - 30px);
+    }
+}
 
 
 @media screen and (max-width: 768px) {
@@ -465,6 +524,11 @@ h1, h2, h3, h4, h5, h6 {
     }
     .container-footer-list.аctive {
         display: block;
+    }
+    .grid_wrapper{
+        width: 100% ;
+        margin: 0 10px 15px;
+
     }
 }
 
